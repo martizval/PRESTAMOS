@@ -26,12 +26,8 @@ function alerts_ajax(alerta){
   			cancelButtonColor: '#d33',
   			confirmButtonText: 'Yes, delete it!'
 		}).then((result) => {
- 			if (result.isConfirmed) {
-    			Swal.fire(
-      				'Deleted!',
-      				'Your file has been deleted.',
-      				'success'
-    			)
+ 			if (result.value) {
+    			
   			}
 		})
 
