@@ -9,5 +9,14 @@ formularios_ajax.forEach(formularios =>{
 });
 
 function alerts_ajax(alerta){
-	
+	if (alerta.Alerta==="simple") {
+		Swal.fire({
+  			title: alerta.Titulo,
+  			text: alerta.Texto,
+  			type: alerta.Tipo,
+  			ConfirmButtontext: 'Aceptar'
+		});
+	}else if(alerta.Alerta==="recargar"){
+
+	}
 }
